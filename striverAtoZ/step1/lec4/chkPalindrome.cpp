@@ -2,6 +2,10 @@
 using namespace std;
 bool chkPalindrome(int x)
 {
+    if (x < 0)
+    {
+        return false;
+    }
     long long temp = x;
     long long result = 0; // long long to prevent overflow
     while (temp != 0)
